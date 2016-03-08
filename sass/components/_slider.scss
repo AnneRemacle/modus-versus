@@ -1,0 +1,73 @@
+.slider{
+
+    &__slides{
+
+        &__slide{
+            display: none;
+        }
+        &__slide--active{
+            display: block;
+            width: 100%;
+            height: 50rem;
+            background-image: url("#{$imgPath}k.jpg");
+            background-position: center center;
+            background-size: cover;
+            text-align: center;
+        }
+            strong{
+                color: #FFF;
+                background-color: $darkFocusColor;
+                text-transform: uppercase;
+                padding: 0 0.5rem ;
+                border-radius:  0.5rem;
+                font-size: 4em;
+                font-weight: bold;
+            }
+            span{
+                background-color: rgba( 0, 0, 0, 0.5 );
+                width: 47rem;
+                margin: 1.5em auto 0;
+                font-size: 1.4rem;
+                padding: 2rem;
+                border-radius: 0.5rem;
+                color: #FFF;
+                display: block;
+            }
+    }
+    &__nav{
+        a{
+            text-decoration: none;
+
+        }
+        .slide-previous::before{
+            background-color: $focusColor;
+            content: "";
+            display: block;
+            width: 5rem;
+            height: 6rem;
+            border-radius: 0 0.5rem 0.5rem 0;
+            font: normal 4rem $glyphs;
+            color: #FFF;
+            text-align: center;
+            padding-top: 0.25em;
+            position: absolute;
+            top: 30rem;
+        }
+        .slide-next::before{
+            background-color: $focusColor;
+            content: "";
+            display: block;
+            width: 5rem;
+            height: 6rem;
+            border-radius: 0.5rem 0 0 0.5rem ;
+            font: normal 4rem $glyphs;
+            color: #FFF;
+            text-align: center;
+            padding-top: 0.25em;
+            position: absolute;
+            top: 30rem;
+            right: 0;
+        }
+    }
+
+}

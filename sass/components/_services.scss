@@ -1,0 +1,120 @@
+/* Modus Versus Slicing
+ *
+ * /sass/components/_services.scss
+ *
+ * coded by anne
+ * started at 02/03/2016
+ */
+
+
+ .services {
+     &__focus {
+     	background: #ececec;
+     	border-radius: .4rem;
+     }
+     &__service {
+
+     }
+  }
+
+ .focus {
+     &__heading {
+     	font: 600 3rem/1.2 "OpenSans";
+     	color:#7f8c8c;
+     }
+     &__text {
+         font: normal 1.3rem/1.5 "OpenSans";
+     }
+     &__callout {
+     	background: #e8645a;
+     	border-radius: 0.4rem;
+     	box-shadow: 0 0.3em 0 0 #e2534b;
+     	font: 600  1.3rem/1 "OpenSans"; /*semibold*/
+     	color: #fff;
+     	text-decoration: none;
+     	text-transform: uppercase;
+     	text-align: center;
+     }
+ }
+
+ .service {
+     &__link {
+     	text-decoration: none;
+     	text-transform: uppercase;
+     	background: #f8f8f8;
+     	border-radius: .4rem;
+     	text-align: center;
+     	-webkit-transition: all .25s ease-in-out;
+     	   -moz-transition: all .25s ease-in-out;
+     	    -ms-transition: all .25s ease-in-out;
+     	     -o-transition: all .25s ease-in-out;
+     	        transition: all .25s ease-in-out;
+     }
+     &__link + &__link {
+
+     }
+     &__link:hover {
+         background: white;
+     }
+
+ }
+
+ .link {
+     &__heading {
+        font: bold 1.3rem/1.5 "OpenSans";
+     	color: #7f8c8c;
+     }
+     &__heading::before {
+     	font: normal 6rem/1 "Glyphs";
+     	color: #62bdbd;
+     	-webkit-transition: all .25s ease-in-out;
+     	   -moz-transition: all .25s ease-in-out;
+     	    -ms-transition: all .25s ease-in-out;
+     	     -o-transition: all .25s ease-in-out;
+     	        transition: all .25s ease-in-out;
+     }
+     &__icon-thumb::before {
+     	content:"";
+     }
+
+     &__icon-key::before {
+     	content:"";
+     }
+
+     &__icon-flag::before {
+     	content:"";
+     }
+
+     &__icon-flask::before {
+     	content:"";
+     }
+     &__text {
+        font: normal 1.3rem/1.5 "OpenSans";
+     	color: #777;
+     }
+     &__fake-button {
+     	background: #62a29a;
+     	border-radius: 0.4rem;
+     	box-shadow: 0 0.3em 0 0 #528b86;
+     	font: 600  1.4rem/1 "OpenSans"; /*semibold*/
+     	color: #fff;
+     	text-decoration: none;
+     	text-align: center;
+     	-webkit-transform: translateY(50%);
+     	   -moz-transform: translateY(50%);
+     	    -ms-transform: translateY(50%);
+     	     -o-transform: translateY(50%);
+     	        transform: translateY(50%);
+     	-webkit-transition: all .25s ease-in-out;
+     	   -moz-transition: all .25s ease-in-out;
+     	    -ms-transition: all .25s ease-in-out;
+     	     -o-transition: all .25s ease-in-out;
+     	        transition: all .25s ease-in-out;
+     }
+ }
+
+ .link:hover {
+     &__heading::before {
+         color: #e8645a;
+     }
+ }

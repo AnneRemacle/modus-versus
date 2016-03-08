@@ -1,0 +1,123 @@
+/* Modus Versus Slicing
+ *
+ * /sass/components/_footer.scss - design for footer
+ *
+ *
+ *
+ */
+
+ .footer {
+    background-color: #76c7c0;
+ 	line-height: 2rem;
+    &__link {
+        color: white;
+    	text-decoration: none;
+    }
+ }
+
+ .primary {
+ 	font-size: 1.3rem;
+ }
+
+ .infos {
+     &__heading {
+     	background: transparent url( "../../assets/img/logo.svg" ) left no-repeat;
+     	-webkit-background-size: contain;
+     	background-size: contain; /*quand on travaille avec du svg, on met tjs un bg size contain pour qu'il ne dépasse pas*/
+     	font-size: 0; /*remplace le text-indent*/
+     }
+ }
+
+ .sitemap{
+     &__list::before {
+         font: normal 1rem/1 "Glyphs";
+     	content: "";
+     }
+ }
+
+ .cols {
+     &__col {
+     	color: white;
+     }
+     &__col--heading {
+
+     }
+     &__col + &__col {
+
+     }
+ }
+
+ .community__heading, .sitemap__heading {
+    font-weight: bold;
+ 	font-size: 2rem;
+ 	color: rgb(75,124,120);
+ 	text-indent: -2rem;
+ }
+ .community {
+     &__list::before {
+        font: normal 1rem/1 "Glyphs";
+     	content: "";
+     }
+ }
+
+.contact-infos{
+    &__heading {
+        font-size: 0;
+    }
+    &__contact--head, &__contact--text {
+    }
+    &__contact--text {
+        font: bold 2rem/2 "OpenSans";
+    }
+
+}
+
+.blog-articles {
+    &__link--date {
+    	color: rgb(94,159,155);
+    }
+    &__heading {
+        font: italic 2rem "OpenSans";
+    }
+    &__heading--link {
+        font: bold 2rem/0.5 "OpenSans";
+    }
+}
+
+.secondary {
+	background-color: rgb(107,180,173);
+    &__legals {
+        font-size: 1.3rem;
+    }
+    &__socials {
+        display: inline;
+    	vertical-align: middle;
+    }
+    &__socials--list {
+        font-size: 0;
+    }
+}
+
+.socials {
+    &__item {
+
+    }
+    &__item + &__item {
+
+    }
+    &__item--link::before {
+        font: normal 3rem "Glyphs";
+    	content: "";
+    	color: white;
+    	vertical-align: middle;
+    }
+    &__item--twitter {
+        content: "";
+    }
+    &__item--google-plus {
+        content: "";
+    }
+    &__item--rss {
+        content: "";
+    }
+}

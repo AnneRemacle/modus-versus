@@ -1,0 +1,23 @@
+/* Modus Versus Slicing
+ *
+ * /sass/objects/_why.scss - Non-cosmetic styles for why section
+ *
+ *
+ *
+ */
+
+.why {
+    margin: 0 auto;
+	max-width: 117rem;
+	margin-top: 12rem;
+    text-align: center;
+
+    &__heading--strong {
+        font-size: 3rem;
+    }
+    &__heading--text {
+        display: block;
+    	margin-top: 1.5rem;
+    	margin-bottom: 6.6rem;
+    }
+}

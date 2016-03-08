@@ -1,0 +1,124 @@
+/* Modus Versus Slicing
+ *
+ * /sass/objects/_footer.scss - Non-cosmetic styles for footer
+ *
+ *
+ *
+ */
+
+ .footer {
+ 	padding-top: 4.8rem;
+
+ }
+
+ .primary {
+    max-width: 117rem;
+ 	margin: 3.5rem auto 6rem;
+ }
+
+ .infos {
+     &__heading {
+        position: relative;
+     	width: 19.2rem;
+     	height: 2.2rem; /*to delete*/
+     	margin: 0 auto;
+     	left:-48.9rem;
+     }
+ }
+
+ .sitemap{
+     &__list::before {
+
+     }
+ }
+
+ .cols {
+     &__col {
+        max-width: 36.5rem;
+     	display: inline-block;
+     	vertical-align: top;
+     }
+     &__col--heading {
+         margin-bottom: 3.5rem;
+     }
+     &__col + &__col {
+         margin-top: -5.7rem;
+         margin-left: 10rem;
+     }
+ }
+
+ .community__heading, .sitemap__heading {
+
+ }
+
+ .community {
+     &__list::before {
+     }
+ }
+
+.contact-infos{
+    &__heading {
+    	position: absolute;
+    }
+    &__contact--head, &__contact--text {
+        display: inline-block;
+    }
+    &__contact--text {
+
+    }
+
+}
+
+.blog-articles {
+    &__link--date {
+        display: block;
+    }
+    &__heading {
+
+    }
+    &__heading--link {
+
+    }
+}
+
+.secondary {
+    padding: 1rem 0;
+	margin: 0 auto;
+    &__legals {
+        display: inline;
+    	vertical-align: middle;
+    	position: relative;
+    	left: 36.5rem;
+    }
+    &__socials {
+        display: inline;
+    	vertical-align: middle;
+    }
+    &__socials--list {
+    	display: inline;
+    	position: relative;
+    	left: 123rem;
+    }
+}
+
+.socials {
+    &__item {
+        display: inline;
+    	vertical-align: middle;
+    }
+    &__item + &__item {
+        margin-left: 3rem;
+    }
+    &__item--link::before {
+
+    }
+    &__item--twitter {
+
+    }
+    &__item--google-plus {
+
+    }
+    &__item--rss {
+        
+    }
+}

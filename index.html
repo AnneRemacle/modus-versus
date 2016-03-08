@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <title>MODUS Versus</title>
+        <link rel="stylesheet" href="css/styles.css" />
+    </head>
+    <body>
+        <div class="wrapper">
+            <header class="header">
+                <div class="topbar">
+                    <h1 class="logo" role="heading" aria-level="1">
+                        <a class="logo__link" href="#">MODUS Versus</a>
+                    </h1>
+                    <nav class="main-nav">
+                        <h2 class="main-nav__heading hidden" role="heading" aria-level="2">
+                            Main navigation menu
+                        </h2>
+                        <ul class="main-nav__list">
+                            <li class="main-nav__elt">
+                                <a class="main-nav__link main-nav__link--is-active" href="#">Home</a>
+                            </li>
+                            <li class="main-nav__elt">
+                                <a class="main-nav__link" href="#">About</a>
+                            </li>
+                            <li class="main-nav__elt">
+                                <a class="main-nav__link" href="#">Services</a>
+                            </li>
+                            <li class="main-nav__elt main-nav__elt--has-dropdown">
+                                <a class="main-nav__link main-nav__link--is-dropdown-head" href="#">Portfolio</a>
+                                <ul class="main-nav__list main-nav__list--is-dropdown">
+                                    <li class="main-nav__elt main-nav__elt--is-sub-elt">
+                                        <a class="main-nav__link main-nav__link--is-sub-link" href="#">Portfolio sub page 1</a>
+                                    </li>
+                                    <li class="main-nav__elt main-nav__elt--is-sub-elt">
+                                        <a class="main-nav__link main-nav__link--is-sub-link" href="#">Portfolio sub page 2</a>
+                                    </li>
+                                    <li class="main-nav__elt main-nav__elt--is-sub-elt">
+                                        <a class="main-nav__link main-nav__link--is-sub-link" href="#">Portfolio sub page 3</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="main-nav__elt">
+                                <a class="main-nav__link" href="#">Blog</a>
+                            </li>
+                            <li class="main-nav__elt main-nav__elt--has-dropdown">
+                                <a class="main-nav__link main-nav__link--is-dropdown-head" href="#">Features</a>
+                                <ul class="main-nav__list main-nav__list--is-dropdown">
+                                    <li class="main-nav__elt main-nav__elt--is-sub-elt">
+                                        <a class="main-nav__link main-nav__link--is-sub-link" href="#">Features sub page 1</a>
+                                    </li>
+                                    <li class="main-nav__elt main-nav__elt--is-sub-elt">
+                                        <a class="main-nav__link main-nav__link--is-sub-link" href="#">Features sub page 2</a>
+                                    </li>
+                                    <li class="main-nav__elt main-nav__elt--is-sub-elt">
+                                        <a class="main-nav__link main-nav__link--is-sub-link" href="#">Features sub page 3</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="main-nav__elt">
+                                <a class="main-nav__link" href="#">Contact</a>
+                            </li>
+                        </ul>
+                        <form class="search-form" role="search" action="#" method="get">
+                            <fieldset>
+                                <legend class="search-form__legend hidden">Search inside the site</legend>
+                                <span class="search-form__toggle">show the search form</span>
+                                <div class="search-form__form-elt">
+                                    <label class="search-form__label hidden" for="search-query">Search term:</label>
+                                    <input class="search-form__input" type="search" name="q" placeholder="keywords, term…" />
+                                    <button class="search-form__button" type="submit">search</button>
+                                </div>
+                            </fieldset>
+                        </form>
+                    </nav>
+                </div>
+                <div class="slider">
+                    <div class="slider__slides">
+                        <div class="slider__slides__slide slider__slides__slide--active" id="slider-one">
+                            <strong>Vestibulum</strong>
+                            <span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officia aspernatur quisquam pariatur.</span>
+
+                        </div>
+                        <div class="slider__slides__slide" id="slider-two">
+                            <strong>Vestibulum</strong>
+                            <span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officia aspernatur quisquam pariatur.</span>
+                        </div>
+                        <div class="slider__slides__slide" id="slider-three">
+                            <strong>Vestibulum</strong>
+                            <span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officia aspernatur quisquam pariatur.</span>
+                        </div>
+                    </div>
+                    <div class="slider__nav">
+                        <a href="#" class="slide-button slide-previous">previous slide</a>
+                        <a href="#" class="slide-button slide-next">next slide</a>
+                        <div class="slider__nav__dots">
+                            <a href="#" class="active" data-slide-ref="slide-one">slide one</a>
+                            <a href="#" data-slide-ref="slide-two">slide two</a>
+                            <a href="#" data-slide-ref="slide-three">slide three</a>
+                        </div>
+                    </div>
+                </div>
+            </header>
+            <main>
+                <section class="services">
+                    <div class="services__focus focus">
+                        <h2 class="focus__heading" role="heading" aria-level="2">
+                            Some of our top services
+                        </h2>
+                        <p class="focus__text">
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                        </p>
+                        <a href="#" class="focus__callout">view more</a>
+                    </div>
+                    <ul class="services-list">
+                        <li class="services__service service">
+                            <a href="#" class="service__link link">
+                                <h3 role="heading" aria-level="3" class="link__heading link__icon-thumb">
+                                    Suspendisse
+                                </h3>
+                                <p class="link__text">
+                                    Lorem ipsum dolor sit amet.
+                                </p>
+                                <span class="link__fake-button">
+                                    read more
+                                </span>
+                            </a>
+                        </li>
+                        <li class="services__service service">
+                            <a href="#" class="service__link link">
+                                <h3 role="heading" aria-level="3" class="link__heading link__icon-key">
+                                    Maecenas
+                                </h3>
+                                <p class="link__text">
+                                    Lorem ipsum dolor sit amet.
+                                </p>
+                                <span class="link__fake-button">
+                                    read more
+                                </span>
+                            </a>
+                        </li>
+                        <li class="services__service service">
+                            <a href="#" class="service__link link">
+                                <h3 role="heading" aria-level="3" class="link__heading link__icon-flag">
+                                    Aliquam
+                                </h3>
+                                <p class="link__text">
+                                    Lorem ipsum dolor sit amet.
+                                </p>
+                                <span class="link__fake-button">
+                                    read more
+                                </span>
+                            </a>
+                        </li>
+                        <li class="services__service service">
+                            <a href="#" class="service__link link">
+                                <h3 role="heading" aria-level="3" class="link__heading link__icon-flask">
+                                    Habitass
+                                </h3>
+                                <p class="link__text">
+                                    Lorem ipsum dolor sit amet.
+                                </p>
+                                <span class="link__fake-button">
+                                    read more
+                                </span>
+                            </a>
+                        </li>
+                    </ul>
+                </section>
+                <section class="why">
+                    <h2 role="heading" aria-level="2" class="why__heading">
+                        <strong class="why__heading--strong">Why Modus Versus?</strong>
+                        <span class="why__heading--text">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</span>
+                    </h2>
+                    <figure class="why__figure">
+                        <img src="http://placekitten.com/750/350" alt="The Modus Versus happy team." />
+                    </figure>
+                    <div class="cols">
+                        <section class="cols__col col">
+                            <h3 class="col__heading" role="heading" aria-level="3">
+                                Why choose us?
+                            </h3>
+                            <p class="col__text">
+                                Lorem ipsum <strong class="col__text--strong">dolor</strong> sit amet, consectetur adipisicing elit. Quidem voluptatum <em>blanditiis</em>, ex iste quas excepturi quae perspiciatis rem voluptates nesciunt totam, quos illum cum sunt, <a href="#">magnam magni</a> reprehenderit esse ut.
+                            </p>
+                        </section>
+                        <section class="cols__col col">
+                            <h3 class="col__heading" role="heading" aria-level="3">
+                                Where to find us?
+                            </h3>
+                            <address class="col__text">
+                                Rue Petermans, 88<br />
+                                4000 Liège
+                            </address>
+                        </section>
+                        <section class="cols__col col">
+                            <h3 class="col__heading" role="heading" aria-level="3">
+                                What clients' say?
+                            </h3>
+                            <blockquote cite="#" class="col__quote">
+                                <p class="col__quote--text">
+                                    Lorem ipsum!
+                                </p>
+                                <cite class="col__quote--author">Client's name</cite>
+                            </blockquote>
+                        </section>
+                    </div>
+                    <section class="clients">
+                        <h3 role="heading" aria-level="3" class="clients__heading">
+                            Our happy clients
+                        </h3>
+                        <div class="clients__nav nav">
+                            <a href="#" class="nav-tabsclient-previous">previous</a>
+                            <a href="#" class="nav__client-next">next</a>
+                        </div>
+                        <ul class="pictures">
+                            <li class="pictures__picture picture">
+                                <a href="#" rel="external" class="picture__link">
+                                    <img src="http://placekitten.com/150/80" alt="client name" class="picture_link--client1" />
+                                </a>
+                            </li>
+                            <li class="pictures__picture picture">
+                                <a href="#" rel="external" class="picture__link">
+                                    <img src="http://placekitten.com/150/80" alt="client name" class="picture_link--client2" />
+                                </a>
+                            </li>
+                            <li class="pictures__picture picture">
+                                <a href="#" rel="external" class="picture__link">
+                                    <img src="http://placekitten.com/150/80" alt="client name" class="picture_link--client3" />
+                                </a>
+                            </li>
+                            <li class="pictures__picture picture">
+                                <a href="#" rel="external" class="picture__link">
+                                    <img src="http://placekitten.com/150/80" alt="client name" class="picture_link--client4" />
+                                </a>
+                            </li>
+                            <li class="pictures__picture picture">
+                                <a href="#" rel="external" class="picture__link">
+                                    <img src="http://placekitten.com/150/80" alt="client name" class="picture_link--client5" />
+                                </a>
+                            </li>
+                            <li class="pictures__picture picture">
+                                <a href="#" rel="external" class="picture__link">
+                                    <img src="http://placekitten.com/150/80" alt="client name" class="picture_link--client6" />
+                                </a>
+                            </li>
+                            <li class="pictures__picture picture">
+                                <a href="#" rel="external" class="picture__link">
+                                    <img src="http://placekitten.com/150/80" alt="client name" class="picture_link--client7" />
+                                </a>
+                            </li>
+                            <li class="pictures__picture picture">
+                                <a href="#" rel="external" class="picture__link">
+                                    <img src="http://placekitten.com/150/80" alt="client name" class="picture_link--client8" />
+                                </a>
+                            </li>
+                            <li class="pictures__picture picture">
+                                <a href="#" rel="external" class="picture__link">
+                                    <img src="http://placekitten.com/150/80" alt="client name" class="picture_link--client9" />
+                                </a>
+                            </li>
+                            <li class="pictures__picture picture">
+                                <a href="#" rel="external" class="picture__link">
+                                    <img src="http://placekitten.com/150/80" alt="client name" class="picture_link--client10" />
+                                </a>
+                            </li>
+                            <li class="pictures__picture picture">
+                                <a href="#" rel="external" class="picture__link">
+                                    <img src="http://placekitten.com/150/80" alt="client name" class="picture_link--client11" />
+                                </a>
+                            </li>
+                        </ul>
+                    </section>
+                </section>
+            </main>
+            <footer itemscope itemtype="http://schema.org/Organization" class="footer">
+                <aside class="infos">
+                    <h2 class="infos__heading"role="heading" aria-level="2">
+                        About MODUS Versus
+                    </h2>
+                    <div class="primary">
+                        <div class="cols">
+                            <section class="cols__col contact-infos">
+                                <h3 class="contact-infos__heading cols__col--heading" role="heading" aria-level="3">
+                                    <a href="#" class="footer__link"><span>Contact </span><span itemprop="name">MODUS Versus</span></a>
+                                </h3>
+                                <p class="contact-infos__description" itemprop="description">
+                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reprehenderit nostrum, perferendis doloremque consectetur suscipit est sequi blanditiis amet dolorem provident.
+                                </p>
+                                <dl class="contact-infos__contact">
+                                    <dt class="contact-infos__contact--head phone">Phone</dt>
+                                    <dd class="contact-infos__contact--text">
+                                        <a class="footer__link" href="tel:0033498090909" itemprop="telephone">123 456 789</a>
+                                    </dd>
+                                    <dt class="contact-infos__contact--head mail">e-mail</dt>
+                                    <dd class="contact-infos__contact--text">
+                                        <a class="footer__link" href="mailto:info@modusversus.com" itemprop="email">info@modusversus.com</a>
+                                    </dd>
+                                </dl>
+                            </section>
+                            <section class="cols__col sitemap">
+                                <h3 class="sitemap__heading cols__col--heading" role="heading" aria-level="3">
+                                    Company
+                                </h3>
+                                <ul>
+                                    <li class="sitemap__list">
+                                        <a class="footer__link sitemap__list--link" href="#">About</a>
+                                    </li>
+                                    <li class="sitemap__list">
+                                        <a class="footer__link sitemap__list--link" href="#">FAQ</a>
+                                    </li>
+                                    <li class="sitemap__list">
+                                        <a class="footer__link sitemap__list--link" href="#">Contact</a>
+                                    </li>
+                                    <li class="sitemap__list">
+                                        <a class="footer__link sitemap__list--link" href="#">Terms</a>
+                                    </li>
+                                    <li class="sitemap__list">
+                                        <a class="footer__link sitemap__list--link" href="#">Privacy</a>
+                                    </li>
+                                    <li class="sitemap__list">
+                                        <a class="footer__link sitemap__list--link" href="#">Testimonials</a>
+                                    </li>
+                                </ul>
+                            </section>
+                            <section class="cols__col community">
+                                <h3 class="community__heading cols__col--heading" role="heading" aria-level="3">
+                                    Community
+                                </h3>
+                                <ul>
+                                    <li class="community__list">
+                                        <a class="footer__link community__list--link" href="#">Blog</a>
+                                    </li>
+                                    <li class="community__list">
+                                        <a class="footer__link community__list--link" href="#">Forum</a>
+                                    </li>
+                                    <li class="community__list">
+                                        <a class="footer__link community__list--link" href="#">Support</a>
+                                    </li>
+                                    <li class="community__list">
+                                        <a class="footer__link community__list--link" href="#">Newsletter</a>
+                                    </li>
+                                </ul>
+                            </section>
+                            <section class="cols__col blog-articles">
+                                <h3 class="blog-articles__heading cols__col--heading" role="heading" aria-level="3">
+                                    from the <a href="#" class="footer__link blog-articles__heading--link">blog</a>
+                                </h3>
+                                <ul>
+                                    <li>
+                                        <a  class="footer__link blog-articles__link" href="#">
+                                            <img  class="blog-articles__link--image" src="http://placekitten.com/70/70" alt="blog post image" />
+                                            <strong  class="blog-articles__link--strong" >Blog article title</strong>
+                                            <time  class="blog-articles__link--date" datetime="#">23 may 2015</time>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a  class="footer__link blog-articles__link" href="#">
+                                            <img  class="blog-articles__link--image" src="http://placekitten.com/70/70" alt="blog post image" />
+                                            <strong  class="blog-articles__link--strong" >Blog article title</strong>
+                                            <time  class="blog-articles__link--date" datetime="#">23 may 2015</time>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </section>
+                        </div>
+                    </div>
+                    <div class="secondary">
+                        <div class="secondary__legals legals">
+                            <a href="#" class="footer__link legals__link">©2015 ModusVersus</a>
+                        </div>
+                        <div class="secondary__socials socials">
+                            <ul class="secondary__socials--list">
+                                <li class="socials__item">
+                                    <a href="#" class="footer__link socials__item--link socials__item--facebook social-facebook">follow us on facebook</a>
+                                </li>
+                                <li class="socials__item">
+                                    <a href="#" class="footer__link socials__item--link socials__item--twitter social-twitter">follow us on Twitter</a>
+                                </li>
+                                <li class="socials__item">
+                                    <a href="#" class="footer__link socials__item--link socials__item--googleplus social-googleplus">follow us on google plus</a>
+                                </li>
+                                <li class="socials__item">
+                                    <a href="#" class="footer__link socials__item--link socials__item--rss rss-feed">follow our rss feed</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </aside>
+            </footer>
+        </div>
+
+        <script src="scripts/scripts.js"></script>
+    </body>
+</html>
