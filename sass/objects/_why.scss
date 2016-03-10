@@ -10,14 +10,104 @@
     margin: 0 auto;
 	max-width: 117rem;
 	margin-top: 12rem;
-    text-align: center;
-
+    &__heading {
+        padding-top: 70px;
+    }
     &__heading--strong {
-        font-size: 3rem;
+        display: block;
     }
     &__heading--text {
         display: block;
-    	margin-top: 1.5rem;
-    	margin-bottom: 6.6rem;
+    }
+    &__figure {
+    	margin: 65px 0 60px 0;
+    }
+    &__cols {
+        width: 117rem;
+    	margin: 0 auto 65px;
+    }
+}
+
+.cols {
+    &__col {
+        display: inline-block;
+    	width: 270px;
+
+    }
+    &__col--quote {
+        float: right;
+        margin-right: 20rem;
+    }
+
+}
+
+.col {
+    text-align: left;
+    &__heading {
+    }
+    &__text {
+    }
+    &__text:before {
+    	display: block;
+    	position: absolute;
+    	width: 0;
+    	height: 0;
+    	bottom: -0.75rem;
+    	left: 2rem;
+    }
+    &:last-child &__text {
+    	background-color: #FFF;
+    }
+    &:last-child &__quote--author {
+        margin: 1rem 0 0 6rem;
+    }
+}
+
+
+.clients {
+    max-width: 117rem;
+    margin: 0 auto;
+    &__heading {
+        float: left;
+    }
+    &__nav {
+        position: relative;
+    }
+}
+
+.nav {
+    &__tabs {
+        display: inline-block;
+    	float: right;
+    	padding: 1rem 1rem;
+    	margin: 1rem;
+    	width: 2rem;
+    	height: 2rem;;
+    }
+    &__tabs:first-child {
+        right: 6rem;
+    }
+    &__tabs:hover {
+    }
+    &__tabs:before {
+    	margin-right: 0rem;
+    }
+}
+
+.pictures {
+    clear: both;
+	overflow: hidden;
+	width: 100%;
+    margin-bottom: 5rem;
+    &__picture {
+        display: table-cell;
+    	table-layout: fixed;
+    	border-collapse: separate;
+    }
+}
+
+.picture {
+    &__link {
+        display: block;
     }
 }

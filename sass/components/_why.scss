@@ -1,0 +1,109 @@
+/* Modus Versus Slicing
+ *
+ * /sass/components/_why.scss - cosmetic styles for why section
+ *
+ *
+ *
+ */
+
+.why {
+    text-align: center;
+    background: #ececec url("../../assets/img/why-bcg-pattern.png") repeat-x scroll left top;
+    &__heading {
+    	text-align: center;
+    }
+    &__heading--strong {
+    	text-transform: uppercase;
+    	color: #e8645a;
+    	font: 600  4rem "OpenSans";
+    }
+    &__heading--text {
+    	font: 1.3rem "OpenSans";
+    }
+    &__figure {
+        text-align: center;
+    }
+    &__cols {
+        vertical-align: bottom;
+    }
+}
+
+.cols {
+    &__col {
+
+    }
+    &__col--quote {
+    }
+
+}
+
+.col {
+    text-align: left;
+    &__heading {
+        font: 900 1.6rem "OpenSans";
+    	color: #7f8c8c;
+    }
+    &__text {
+        font-size: 1.3rem;
+    	line-height: 2.6rem;
+    }
+    &__text:before {
+        content:" ";
+    	border: .75rem solid transparent;
+    	border-bottom-color: #FFF;
+    	z-index: 1000;
+    	transform: rotate(45deg);
+    }
+    &:last-child &__text {
+    	background-color: #FFF;
+    }
+    &:last-child &__quote--author {
+        margin: 1rem 0 0 6rem;
+    }
+}
+
+
+.clients {
+    &__heading {
+        font: 900 1.6rem "OpenSans";
+    	color: #7f8c8c;
+    }
+    &__nav {
+    }
+}
+
+.nav {
+    &__tabs {
+    	border-radius: 0.4rem;
+    	font: 600  1.3rem/1 "OpenSans"; /*semibold*/
+    	text-decoration: none;
+    	text-transform: uppercase;
+    	color: transparent;
+    	background-color: #e8645a;
+    }
+    &__tabs:first-child {
+    }
+    &__tabs:hover {
+        background: #e8645a;
+    	box-shadow: 0 0.3rem 0 0 #e2534b;
+    }
+    &__tabs:before {
+        content: "";
+    	font: normal 1.4rem "Glyphs";
+    	color: #FFF;
+
+    }
+}
+
+.pictures {
+    clear: both;
+	overflow: hidden;
+    &__picture {
+    	border-right: 3rem solid transparent;
+    }
+}
+
+.picture {
+    &__link {
+    }
+}

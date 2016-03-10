@@ -36,13 +36,13 @@
  }
 
  .cols {
-     &__col {
+     &__coll {
      	color: white;
      }
-     &__col--heading {
+     &__coll--heading {
 
      }
-     &__col + &__col {
+     &__coll + &__coll {
 
      }
  }
@@ -111,13 +111,13 @@
     	color: white;
     	vertical-align: middle;
     }
-    &__item--twitter {
+    &__item--twitter::before {
         content: "";
     }
-    &__item--google-plus {
-        content: "";
+    &__item--google-plus::before {
+        content: "";
     }
-    &__item--rss {
+    &__item--rss::before {
         content: "";
     }
 }

@@ -59,6 +59,7 @@
 
  }
 
+
  .link {
      &__heading {
         font: bold 1.3rem/1.5 "OpenSans";
@@ -88,6 +89,9 @@
      &__icon-flask::before {
      	content:"";
      }
+     &__heading:hover::before {
+         color:#e8645a;
+     }
      &__text {
         font: normal 1.3rem/1.5 "OpenSans";
      	color: #777;
@@ -111,10 +115,17 @@
      	     -o-transition: all .25s ease-in-out;
      	        transition: all .25s ease-in-out;
      }
+     &__:hover {
+
+     }
  }
 
- .link:hover {
-     &__heading::before {
+ .link{
+     &:hover {
+     &__fake-button {
+         background: #e8645a;
+         box-shadow: 0 0.3rem 0 0 #e2534b;
+     }
          color: #e8645a;
      }
  }

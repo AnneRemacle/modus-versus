@@ -7,9 +7,10 @@
  */
 
 .services {
- 	display: block;
- 	width: 117rem;
- 	margin: 0 auto;
+    display: block;
+	width: 117rem;
+	height: 450px; /*TMP*/
+	margin: 0 auto;
 
     &__focus {
         margin: 0 auto 5rem;
@@ -50,7 +51,7 @@
         margin-left: 2.564102564% ; /* 30/1170*100 */
     }
     &__link:hover {
-
+        
     }
 
 }
@@ -92,6 +93,6 @@
 
 .link:hover {
     &__heading::before {
-    
+
     }
 }

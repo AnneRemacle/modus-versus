@@ -33,15 +33,15 @@
  }
 
  .cols {
-     &__col {
+     &__coll {
         max-width: 36.5rem;
      	display: inline-block;
      	vertical-align: top;
      }
-     &__col--heading {
+     &__coll--heading {
          margin-bottom: 3.5rem;
      }
-     &__col + &__col {
+     &__coll + &__coll {
          margin-top: -5.7rem;
          margin-left: 10rem;
      }
@@ -88,7 +88,7 @@
         display: inline;
     	vertical-align: middle;
     	position: relative;
-    	left: 36.5rem;
+    	left: 5rem;
     }
     &__socials {
         display: inline;
@@ -97,7 +97,7 @@
     &__socials--list {
     	display: inline;
     	position: relative;
-    	left: 123rem;
+    	left: 90rem;
     }
 }
 
@@ -119,6 +119,6 @@
 
     }
     &__item--rss {
-        
+
     }
 }
